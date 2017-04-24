@@ -10,14 +10,8 @@ class App extends Component {
     const { onChangeColor, color } = this.props;
     return (
       <div>
-        <div styleName="react-logo" onClick={ onChangeColor } style={{ color}}>
-          <span/>
-        </div>
-        <p>
-          <Link to={ routeFor("awesome-react") } style={{color}}>
-            Awesome React!
-          </Link>
-        </p>
+        <h1>holis holis</h1>
+        { this.props.children }
       </div>
     );
   }
